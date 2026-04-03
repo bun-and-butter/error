@@ -51,8 +51,7 @@ class UserParseError extends BaseError<UserParseErrorCode> {
 	 * and do not accidentally add an invalid key.
 	 */
 	static readonly messages = {
-		[UserParseErrorCode.InvalidJSON]:
-            "The provided string is not valid JSON",
+		[UserParseErrorCode.InvalidJSON]: "The provided string is not valid JSON",
 		[UserParseErrorCode.InvalidPayload]:
 			"The parsed value is not a valid user payload",
 		[UserParseErrorCode.MissingUsername]:
