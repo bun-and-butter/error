@@ -19,41 +19,13 @@ with:
 
 This package is Bun-only.
 
-We do not publish prebuilt artifacts to npm or another package registry.
-Because the package is written for Bun, the TypeScript sources are consumed
-directly from Git without a separate build step.
+We do not publish prebuilt artifacts to npm or another package registry. `@bun-and-butter/error` is installed directly from the GitHub repository and that is the recommended install path for the current version.
 
-Bun can install straight from the repository. If you do not provide a branch,
-tag, or commit, Bun installs the repository's default branch. In this
-repository, that means the latest stable version from `main`. The `#dev`
-branch is available as an unstable pre-release line. If you prefer a fully
-reproducible install, pin to a commit or tag.
-
-For more details on Bun's Git dependency support, see the
-[Bun `add` documentation](https://bun.com/docs/pm/cli/add#git-dependencies).
-
-### Latest Stable
+For the exact `bun add` behavior, see the
+[Bun docs on Git dependencies](https://bun.com/docs/pm/cli/add#git-dependencies).
 
 ```sh
 bun add git@github.com:bun-and-butter/error.git
-```
-
-### Dev Branch
-
-```sh
-bun add git@github.com:bun-and-butter/error.git#dev
-```
-
-### Pinned Commit
-
-```sh
-bun add git@github.com:bun-and-butter/error.git#<commit-sha>
-```
-
-### Tag
-
-```sh
-bun add git@github.com:bun-and-butter/error.git#v<version>
 ```
 
 ## Quick Start
